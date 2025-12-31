@@ -1,2 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mughal Trading | Car Trading</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;color:#333;}
+
+/* TOP BAR */
+.top-bar {background:#111;color:#fff;padding:8px 20px;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;}
+
+/* HEADER */
+header {background:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 5px rgba(0,0,0,0.1);}
+header h1{margin:0;font-size:24px;}
+nav a{margin-left:18px;text-decoration:none;color:#333;font-weight:bold;}
+.lang-btn{background:#000;color:#fff;border:none;padding:6px 12px;border-radius:4px;cursor:pointer;}
+
+/* HERO */
+.hero{text-align:center;padding:80px 20px;background:#000;color:#fff;}
+.hero h2{font-size:42px;margin-bottom:10px;}
+
+/* SECTIONS */
+.section{max-width:1100px;margin:auto;padding:50px 20px;}
+.section h3{font-size:30px;margin-bottom:15px;}
+
+/* GRID / BOX */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.box{background:#fff;padding:25px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,0.08);cursor:pointer;transition:transform 0.2s;}
+.box:hover{transform:translateY(-5px);}
+
+/* IMAGES */
+img{width:100%;border-radius:10px;}
+
+/* CONTACT */
+.contact p{font-size:16px;margin:8px 0;}
+
+/* FOOTER */
+footer{background:#111;color:#fff;text-align:center;padding:20px;}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div>
+    📞 080-7559-1116 | ✉️ mughaltrading0511@gmail.com | 📍 茨城県結城市結城4428-1 / 3379
+  </div>
+  <div>
+    <button class="lang-btn" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" onclick="setLang('jp')">日本語</button>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header>
+  <h1>Mughal Trading</h1>
+  <nav>
+    <a href="#home" data-en="Home" data-jp="ホーム">Home</a>
+    <a href="#about" data-en="About" data-jp="会社情報">About</a>
+    <a href="#services" data-en="Services" data-jp="サービス">Services</a>
+    <a href="#cars" data-en="Cars" data-jp="車両">Cars</a>
+    <a href="#locations" data-en="Locations" data-jp="拠点">Locations</a>
+    <a href="#contact" data-en="Contact" data-jp="お問い合わせ">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h2 data-en="Professional Car Trading Company" data-jp="信頼できる自動車取引会社">Professional Car Trading Company</h2>
+  <p data-en="Showroom Sales • Export • Containers • Repairs" data-jp="展示場販売・輸出・コンテナ・修理">Showroom Sales • Export • Containers • Repairs</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <h3 data-en="About Mughal Trading" data-jp="ムガルトレーディングについて">About Mughal Trading</h3>
+  <p data-en="Mughal Trading is a trusted car trading company based in Ibaraki, Japan. We sell vehicles directly from our showroom and also operate a second yard where we handle container loading, vehicle storage, and repair work."
+     data-jp="Mughal Tradingは茨城県に拠点を置く自動車販売・貿易会社です。展示場での車両販売に加え、第2ヤードではコンテナ積み込み、車両保管および修理作業を行っています。">
+    Mughal Trading is a trusted car trading company...
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h3 data-en="Our Services" data-jp="サービス内容">Our Services</h3>
+  <div class="grid">
+    <div class="box" data-en="Showroom Car Sales" data-jp="展示場販売">
+      Showroom Car Sales
+      <p data-en="We sell quality vehicles directly from our showroom." data-jp="展示場にて厳選された車両を販売しています。">We sell quality vehicles directly from our showroom.</p>
+    </div>
+    <div class="box" data-en="Export & Containers" data-jp="輸出・コンテナ">
+      Export & Containers
+      <p data-en="Container loading and export services from our second yard." data-jp="第2ヤードにてコンテナ積み込みおよび輸出対応を行っています。">Container loading and export services from our second yard.</p>
+    </div>
+    <div class="box" data-en="Repairs & Maintenance" data-jp="修理・整備">
+      Repairs & Maintenance
+      <p data-en="Basic repairs and preparation before delivery or export." data-jp="納車や輸出前の基本的な修理・整備を行います。">Basic repairs and preparation before delivery or export.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARS -->
+<section class="section" id="cars">
+  <h3 data-en="Our Cars" data-jp="車両">Our Cars</h3>
+  <div class="grid">
+    <a href="cars/toyota-supra.html" style="text-decoration:none;color:inherit;">
+      <div class="box">
+        <img src="images/supra.jpg" alt="Toyota Supra">
+        <h4>Toyota Supra</h4>
+        <p>Year: 2020</p>
+        <p>Price: Contact us</p>
+      </div>
+    </a>
+
+    <a href="cars/nissan-skyline.html" style="text-decoration:none;color:inherit;">
+      <div class="box">
+        <img src="images/skyline.jpg" alt="Nissan Skyline">
+        <h4>Nissan Skyline</h4>
+        <p>Year: 2019</p>
+        <p>Price: Contact us</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- LOCATIONS -->
+<section class="section" id="locations">
+  <h3 data-en="Our Locations" data-jp="拠点情報">Our Locations</h3>
+  <div class="grid">
+    <a href="locations/showroom.html" style="text-decoration:none;color:inherit;">
+      <div class="box">
+        <h4 data-en="Showroom" data-jp="展示場">Showroom</h4>
+        <p data-en="4428-1 Yuki, Yuki-shi, Ibaraki" data-jp="茨城県結城市結城4428-1">4428-1 Yuki, Yuki-shi, Ibaraki</p>
+      </div>
+    </a>
+    <a href="locations/second-yard.html" style="text-decoration:none;color:inherit;">
+      <div class="box">
+        <h4 data-en="Second Yard" data-jp="第2ヤード">Second Yard</h4>
+        <p data-en="3379 Yuki, Yuki-shi, Ibaraki" data-jp="茨城県結城市結城3379">3379 Yuki, Yuki-shi, Ibaraki</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <h3 data-en="Contact Information" data-jp="連絡先">Contact Information</h3>
+  <p>📞 Phone / WhatsApp: 080-7559-1116</p>
+  <p>✉️ Email: mughaltrading0511@gmail.com</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Mughal Trading. All Rights Reserved.</p>
+</footer>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll("[data-en]").forEach(el=>{
+    el.innerText=lang==="jp"?el.dataset.jp:el.dataset.en;
+  });
+}
+</script>
+
+</body>
+</html>
+<a href="locations/showroom.html">
+  <div class="card">
+    <h3>Showroom</h3>
+    <p>Address: 茨城県結城市結城4428-1</p>
+    <p>Phone / WhatsApp: 080-7559-1116</p>
+  </div>
+</a>
+
+<a href="locations/second-yard.html">
+  <div class="card">
+    <h3>Second Yard</h3>
+    <p>Address: 茨城県結城市結城3379</p>
+    <p>Phone / WhatsApp: 080-7559-1116</p>
+  </div>
+</a>
 
 
